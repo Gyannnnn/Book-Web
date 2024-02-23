@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+    height: 5vw;
+    width: 100vw;
+    background-color: red;
+    position: fixed;
+    background: transparent;
+    color: red;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    gap: 2vw;
+    list-style: none;
+}
+ul li a{
+    
+    text-decoration: none;
+    color: red;
+}
+.container1{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    
+}
+.left1{
+    height: 100vh;
+    width: 60vw;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+}
+.right1{
+    height: 100vh;
+    width: 40vw;
+    background: #fff;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.right1 img{
+    height: 40vw;
+}
+.left1 .heading{
+    font-size: 5vw;
+}
+.left1 .subhead{
+    font-size: 2vw;
+}
+
+
+.searchbar input{
+    padding: 1vw 5vw;
+    border: 1px solid black;
+    border-radius: 256px;
+    
+    
+    font-size: 1.5vw;
+}
+.searchbar input::placeholder{
+    
+    color: red;
+}
+
+/* ADDING RESPONSIVENESS TO THE EXPLORE SECTION  */
+@media (max-width: 750px){
+    .container1{
+        flex-direction: column;
+        gap: none;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .left1{
+        width: 100vw;
+        height: 40vh;
+    }
+    .right1{
+        width: 100vw;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .right1 img{
+        height: 75vw;
+        padding-left: 15vw;
+
+    }
+    .left1 .heading{
+        font-size: 5vw;
+    }
+    .left1 .subhead{
+        font-size: 3vw;
+    }
+    .searchbar input{
+        padding: 1vw 5vw;
+        border: 1px solid black;
+        border-radius: 256px;
+        
+        
+        font-size: 1.5vw;
+    }
+}
+
+/* EXPLORE SECTION END HERE */
+
+.container2{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(241, 233, 233, 0.849);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left2{
+    height: 60vh;
+    width: 15vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.left2 ul{
+    display: flex;
+    flex-direction: column;
+}
+.left2 ul li{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5vw 3vw;
+}
+.left2 ul li a{
+    color: black;
+    font-size: 1.5vw;
+}
+.right2{
+    
+    
+    height: 77vh;
+    width: 80vw;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+    
+}
+.right2 .box{
+    font-size: vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw;
+    border: 1px solid black;
+    border-style:dashed ;
+    
+}
+.right2 .box img{
+    height: 15vw;
+}
+@media (max-width: 750px){
+    .right2{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media (max-width: 500px){
+     .container2{
+        flex-direction: column;
+
+     }
+     .left2{
+        height: 5vh;
+     }
+     .left2 ul{
+        flex-direction: row;
+     }
+     .left2 ul li{
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 0.5vw 3vw;
+    }
+    .left2 ul li a{
+        color: black;
+        font-size: 1.5vw;
+    }
+    .left2{
+        width: 100vw;
+    }
+
+}
+.container3{
+    background-color: rgba(241, 233, 233, 0.849);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cnt3{
+    overflow: scroll;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vw;
+    background: #ffffff;
+    height: 80vh;
+    width: 95vw;
+}
+.hd1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid red;
+    height: 4vh;
+}
+.hd1 h1 {
+    font-size: 2vw;   
+    
+}
+.books{
+    height: 78vh ;
+    display: grid;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+.books .box{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.books .box img{
+    height: 25vh;
+}
+@media (max-width:750px){
+    .books{
+        grid-template-columns: repeat(3,2fr);
+        grid-template-rows: repeat(3,2fr);
+    }
+}
+
+
+
+
+
+
+
+
