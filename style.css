@@ -163,11 +163,21 @@ ul li a{
     border: 2px solid black;
     border-radius: 20px;
     padding: 0.5vw 3vw;
+    transition: 0.5ms ease-in-out;
+}
+.left2 ul li:hover{
+    background: red;
+    
 }
 .left2 ul li a{
     color: black;
     font-size: 1.5vw;
+    transition: 0.5ms ease-in-out;
 }
+.left2 ul li a:hover{
+    color: #fff;
+}
+
 .right2{
     
     
@@ -186,8 +196,7 @@ ul li a{
     justify-content: center;
     align-items: center;
     margin: 0.5vw;
-    border: 1px solid black;
-    border-style:dashed ;
+
     
 }
 .right2 .box img{
@@ -299,15 +308,16 @@ ul li a{
     background-color: #ffffff;
 }
 .image img{
-    height: 20vw;
+    height: 15vw;
 }
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
-    width: 100vw;
-    background: yellow;
+    height: 10vh;
+    width: 99vw;
+    background: black;
+    color: white;
 }
 
 /* adding responsiveness to the rest section */
