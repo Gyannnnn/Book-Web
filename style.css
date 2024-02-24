@@ -18,6 +18,15 @@ html{
     background: transparent;
     color: red;
 }
+#logo{
+    
+    font-weight: bold;
+    /* border: 1px solid black; */
+    background: rgba(255, 0, 0, 0.511);
+    padding: .5vw 3vw;
+    color: black;
+    border-radius: 30px;
+}
 ul{
     display: flex;
     justify-content: space-evenly;
@@ -235,39 +244,86 @@ ul li a{
 }
 .hd1 {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    border: 1px solid red;
     height: 4vh;
 }
-.hd1 h1 {
-    font-size: 2vw;   
-    
+.cnt3 .hd1 h1{
+    font-size: 4vw;
 }
 .books{
     height: 78vh ;
     display: grid;
     flex-wrap: wrap-reverse;
     gap: 10px;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
     
 }
 .books .box{
-    border: 2px solid red;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.books .image{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.books .bkcnt{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
-.books .box img{
-    height: 25vh;
+.bkcnt h1{
+    font-size: 2vw;
 }
-@media (max-width:750px){
+.bookdescription{
+    font-size: 1vw;
+}
+
+#buy{
+    background-color: red;
+    color: white;
+    padding: 0.5vw 2vw;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+#buy:hover{
+    color: black;
+    background-color: #ffffff;
+}
+.image img{
+    height: 20vw;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100vw;
+    background: yellow;
+}
+
+/* adding responsiveness to the rest section */
+@media (max-width: 750px){
     .books{
-        grid-template-columns: repeat(3,2fr);
-        grid-template-rows: repeat(3,2fr);
+        grid-template-columns: repeat(1,1fr);
     }
+    .bkcnt h1{
+        font-size: 3vw;
+    }
+    .bookdescription{
+        font-size: 2vw;
+    }
+
 }
+
 
 
 
