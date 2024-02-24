@@ -199,6 +199,7 @@ ul li a{
 
     
 }
+
 .right2 .box img{
     height: 15vw;
 }
@@ -220,16 +221,21 @@ ul li a{
         flex-direction: row;
      }
      .left2 ul li{
+        background: red;
         border: 2px solid black;
         border-radius: 10px;
-        padding: 0.5vw 3vw;
+        
     }
-    .left2 ul li a{
-        color: black;
-        font-size: 1.5vw;
+    .left2 ul li a{        
+        color: #ffffff;
+        font-size: 1.7vw;
+        padding: 0.6vw;
     }
     .left2{
         width: 100vw;
+    }
+    .right2 .des h1{
+        font-size: 3vw;
     }
 
 }
