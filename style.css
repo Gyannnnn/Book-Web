@@ -53,6 +53,7 @@ ul li a {
     width: 100vw;
     display: flex;
     flex-direction: row;
+    background: rgb(255,151,29);
 
 }
 
@@ -377,6 +378,21 @@ footer {
     width: 99vw;
     background: black;
     color: white;
+}
+#link {
+    background: red;
+    border: 1px solid black;
+    padding: 0.5vw 2vw;
+    border-radius: 24px;
+    color: white;
+    font-weight: bolder;
+
+}
+#link:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 1px solid red;
 }
 #shd img{
     filter: drop-shadow(1px 1px 20px );
