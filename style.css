@@ -53,7 +53,7 @@ ul li a {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background: rgb(255,151,29);
+    background: rgb(255, 151, 29);
 
 }
 
@@ -258,13 +258,13 @@ ul li a {
 
     .left2 ul li {
         background: rgba(236, 186, 186, 0.418);
-       
+
         border-radius: 10px;
 
     }
 
     .left2 ul li a {
-        font-weight:bolder;        
+        font-weight: bolder;
         color: black;
         font-size: 1vw;
         padding: 0.6vw 1vw 1vw 1vw;
@@ -379,6 +379,7 @@ footer {
     background: black;
     color: white;
 }
+
 #link {
     background: red;
     border: 1px solid black;
@@ -388,14 +389,16 @@ footer {
     font-weight: bolder;
 
 }
-#link:hover{
+
+#link:hover {
     cursor: pointer;
     background: white;
     color: black;
     border: 1px solid red;
 }
-#shd img{
-    filter: drop-shadow(1px 1px 20px );
+
+#shd img {
+    filter: drop-shadow(1px 1px 20px);
 }
 
 /* adding responsiveness to the rest section */
@@ -413,13 +416,15 @@ footer {
     }
 
 }
+
 @media (max-width: 273px) {
     .left2 ul li a {
         color: #ffffff;
         font-size: 1vw;
         padding: 0vw 1vw;
     }
-    .left2 ul li{
+
+    .left2 ul li {
         border: none;
 
     }
